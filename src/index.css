@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --color-bg: #0b0f19;
+  --color-surface: #121826;
+  --color-surface-alt: #1b2233;
+  --color-primary: #4f8cff;
+  --color-primary-hover: #3d73d9;
+  --color-text: #f5f7ff;
+  --color-muted: #9aa4b2;
+  --color-border: #273042;
+
+  --font-main: 'Inter', sans-serif;
+
+  --container: 1100px;
+
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-5: 3rem;
+
+  --radius-sm: 0.75rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.5rem;
+
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-main);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+main {
+  width: min(100% - 2rem, var(--container));
+  margin: 0 auto;
+  padding-top: 6.5rem;
+  padding-bottom: 3rem;
+}
+
+.section {
+  padding: 4rem 0;
+}
