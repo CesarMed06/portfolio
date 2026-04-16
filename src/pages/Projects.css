@@ -1,0 +1,128 @@
+.projects {
+    padding-bottom: var(--space-5);
+}
+
+.projects__header {
+    margin-bottom: var(--space-4);
+}
+
+.projects__eyebrow {
+    color: var(--color-primary);
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: var(--space-1);
+}
+
+.projects__title {
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+    margin-bottom: var(--space-1);
+}
+
+.projects__intro {
+    color: var(--color-muted);
+}
+
+.projects__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-3);
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    padding: var(--space-3);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-soft);
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.project-card:hover {
+    border-color: var(--color-primary);
+    transform: translateY(-3px);
+}
+
+.project-card__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--space-1);
+}
+
+.project-card__title {
+    font-size: 1.15rem;
+}
+
+.project-card__year {
+    font-size: 0.85rem;
+    color: var(--color-muted);
+    white-space: nowrap;
+}
+
+.project-card__description {
+    color: var(--color-muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.project-card__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1);
+    list-style: none;
+    padding: 0;
+}
+
+.project-card__tag {
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 0.3rem 0.65rem;
+    background: var(--color-surface-alt);
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    color: var(--color-text);
+}
+
+.project-card__actions {
+    display: flex;
+    gap: var(--space-1);
+    margin-top: auto;
+}
+
+.project-card__btn {
+    padding: 0.55rem 1.1rem;
+    border-radius: 999px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    border: 1px solid transparent;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.project-card__btn--ghost {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+.project-card__btn--ghost:hover {
+    background: rgba(79, 140, 255, 0.1);
+}
+
+.project-card__btn--primary {
+    background: var(--color-primary);
+    color: #fff;
+}
+
+.project-card__btn--primary:hover {
+    background: #3d73d9;
+}
+
+@media (max-width: 640px) {
+    .projects__grid {
+        grid-template-columns: 1fr;
+    }
+}
