@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 import Home from './pages/Home'
 import Career from './pages/Career'
 import Projects from './pages/Projects'
@@ -17,6 +18,7 @@ function App() {
           <Route path="/tecnologias" element={<Technologies />} />
         </Routes>
       </main>
+      <Footer />
     </>
   )
 }

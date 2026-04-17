@@ -2,17 +2,8 @@ import './Projects.css'
 
 const projects = [
     {
-        title: 'Bikes for Refugees',
-        year: '2026',
-        description:
-            'Réplica visual de la web de Bikes for Refugees Scotland usando solo HTML y CSS. Incluye layout con Flexbox, accesibilidad (skip link, aria-label) y gestión de imágenes con Cloudinary.',
-        tags: ['HTML', 'CSS', 'Accesibilidad'],
-        github: 'https://github.com/CesarMed06/bikes-for-refugees',
-        demo: null,
-    },
-    {
         title: 'ShirtFinder',
-        year: '2025 – 2026',
+        year: '2025',
         description:
             'Buscador de camisetas de fútbol con catálogo filtrable, valoraciones, favoritos, foro y chatbot con IA (Gemini). Proyecto final de 2º DAW.',
         tags: ['React', 'Node.js', 'Express', 'MySQL', 'JWT'],
@@ -27,6 +18,15 @@ const projects = [
         tags: ['HTML', 'CSS', 'JavaScript', 'LocalStorage'],
         github: 'https://github.com/CesarMed06/GoalTasker',
         demo: 'https://goal-tasker.vercel.app/',
+    },
+    {
+        title: 'Bikes for Refugees',
+        year: '2026',
+        description:
+            'Réplica visual de la web de Bikes for Refugees Scotland usando solo HTML y CSS. Incluye layout con Flexbox, accesibilidad (skip link, aria-label) y gestión de imágenes con Cloudinary.',
+        tags: ['HTML', 'CSS', 'Accesibilidad'],
+        github: 'https://github.com/CesarMed06/bikes-for-refugees',
+        demo: null,
     },
 ]
 
